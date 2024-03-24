@@ -6,24 +6,104 @@
             "id": "f9203562-8848-4b9d-a3c8-8ccf3a40a457",
             "actions": [
                 {
-                    "name": "Touch",
+                    "name": "TouchTap",
                     "type": "Button",
-                    "id": "73d17e2b-9261-4a1c-99c5-5004dd09f88e",
+                    "id": "59083531-bc90-4b4c-b5b3-354acfcfafc4",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "TouchPosition",
+                    "type": "PassThrough",
+                    "id": "dd684c17-fb46-4306-8cb8-0167a1fcbd8d",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "DoubleTap",
+                    "type": "Button",
+                    "id": "1520ac6b-5586-4ac5-9e92-878194d68b4c",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "MultiTap(tapDelay=0.4)",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "PressAndHold",
+                    "type": "Button",
+                    "id": "7a93ebc9-9bcd-444a-b481-22c659114d6f",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Press",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Swipe",
+                    "type": "Button",
+                    "id": "0f2f5c80-4466-4c65-905e-7a2c40408151",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Press",
                     "initialStateCheck": false
                 }
             ],
             "bindings": [
                 {
                     "name": "",
-                    "id": "a05e7861-6977-45a1-a75a-b674d272eaf6",
+                    "id": "4799868e-37d6-497e-9395-18105123fd97",
+                    "path": "<Touchscreen>/primaryTouch/tap",
+                    "interactions": "Press(pressPoint=0.1)",
+                    "processors": "",
+                    "groups": "",
+                    "action": "TouchTap",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c7bf5bdc-38cf-4095-ad24-a148dd5af2d1",
+                    "path": "<Touchscreen>/primaryTouch/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "TouchPosition",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "762b2dda-a068-4720-bcfe-70a0fb186212",
+                    "path": "<Touchscreen>/primaryTouch/tap",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "DoubleTap",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b77b961f-a466-47b3-92a1-fa73326d1d2a",
                     "path": "<Touchscreen>/Press",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Touch",
-                    "action": "Touch",
+                    "groups": "",
+                    "action": "PressAndHold",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "865b991a-ffc8-4594-b3d5-f40b79d1955f",
+                    "path": "<Touchscreen>/Press",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Swipe",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
